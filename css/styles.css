@@ -1,0 +1,420 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Anek Latin', sans-serif;
+}
+header{
+    background-color: rgb(133, 133, 133);
+    position: sticky;
+    top: 0px;
+    /* display: flex;   */
+}
+h1{
+    display: block;
+    
+}
+p{
+    display: block;
+}
+footer{
+    background-color: rgb(146, 226, 193);
+    height: 80px;
+}
+
+.menu__icono{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.header__nav{
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: auto;
+    width: 100%;
+}
+.header__logo{
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+.header__list{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.header__item{
+    width: 15%;
+    text-align: center;
+}
+.header__item a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* .banner{
+    background-image: url(../resources/portada.jpg);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    border: 2px solid black;
+}
+.banner__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0px 0px 50px;
+}
+.banner__h1{
+    font-size: 60px;
+}
+.banner__p{
+    color: white;
+} */
+.carousel__altura {
+    height: 500px;
+    width: 100%;
+}
+
+.section__galery{
+    /* SE VUELVE AUTOMATICAMENTE PADRE */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.galery__img{
+    height: 300px;
+    padding: 5px;
+    margin: 15px;
+    overflow: hidden;
+    border: #eb0b0b 4px solid;
+    transition: .3s;
+    filter: grayscale(0);
+}
+.galery__img:hover {
+    filter: grayscale(100%);
+}
+.footer__img{
+    width: 40px;
+    height: auto;
+    padding-top: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    
+}
+.section__img--perros{
+    width: 100%;
+    height: auto;
+
+}
+.titulo__perros{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.card{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    margin: 10px;
+}
+.card__img{
+        width: 400px;
+        height: auto;
+        overflow: hidden;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: fill;
+}
+.card__info{
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* GAATOS */
+.title_cats{
+    text-align: center;
+}
+.photos__grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'card1 card2 card3'
+                         'card4 card5 card5'
+                         'button button button';
+    column-gap: 25px;
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.button{
+    grid-area: button;
+}
+.grid__cards{
+    height: 100%;
+    
+}
+.grid__cards img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.div__igor{
+    width: 100%;
+    height: 300px;
+    background-image: url(../resources/gatos/igor-karimov-cjJYr-m2H9U-unsplash.jpg);
+    background-size: contain;
+}
+.div__jacalyn{
+    width: 100%;
+    height: 300px;
+    background-image: url(../resources/gatos/jacalyn-beales-CKsDMYPDgCs-unsplash.jpg);
+    background-size: contain;
+}
+.div__patrizia{
+    width: 100%;
+    height: 300px;
+    background-image: url(../resources/gatos/patrizia-berta-OSUIvOh1iaI-unsplash.jpg);
+    background-size: contain;
+}
+.div__raul{
+    width: 100%;
+    height: 300px;
+    background-image: url(../resources/gatos/raul-varzar-1l2waV8glIQ-unsplash.jpg);
+    background-size: contain;
+}
+.div__lucky{
+    width: 100%;
+    height: 300px;
+    background-image: url(../resources/gatos/the-lucky-neko-MEQFUHzCtAo-unsplash.jpg);
+    background-size: contain;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.button__cards {
+    width: 500px;
+    height: 70px;
+    background-color: #000000;
+    border-radius: 15px;  
+    font-size: 32px;
+    color: white;
+    padding: 10px;  
+    justify-content: center;
+    align-items: center;
+}
+/* SOBRE NOSOTROS */
+.gallery__grid{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'andrew alvan anoir'
+                         'chewy alvan veronika';
+    grid-template-columns: repeat (3 1fr);
+    grid-template-rows: auto;
+    background-color: rgb(119, 119, 119);
+    gap: 5px;
+    padding: 5px;
+}
+.andrew{
+    grid-area: andrew;
+}
+.alvan{
+    grid-area: alvan;
+}
+.anoir{
+    grid-area:anoir;
+}
+.chewy{
+    grid-area: chewy;
+}
+.veronika{
+    grid-area: veronika;
+}
+.gallery__img {
+    background-color: #ffff;
+    border-radius: 3px;
+    height: 100%;
+}
+.gallery__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    filter: grayscale(0);
+}
+.gallery__img img:hover{
+    filter: grayscale(100%);
+}
+.contact{
+    margin: 5px 0px 0px 20px;
+}
+
+@media (max-width: 1024px) {
+    
+    .header__nav{
+        height: auto;
+    }
+    .header__logo{
+        width: 90px;
+        height: 90px;
+        padding-left: 10px;
+    }
+    .header__list{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-grow: 1;
+    
+    }
+    .header__item{
+        padding: 45px;
+    }
+    .header__item a{
+        font-size: 16px;
+    }
+    .header__item a:hover{
+        color: rgb (255, 255, 255);
+        background-color: rgb (17, 114, 81);
+        transition: .5s;
+    }
+
+    header{
+        background-color: red;
+        height: auto;
+    }
+    .header__nav{
+        height: auto;
+        justify-content: center;
+    }
+    .header__list{
+        flex-direction: column;
+    }
+    .photos__grid{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'card1 card2'
+                             'card3 card4'
+                             'card5 card5'
+                             'button button';
+        column-gap: 25px;
+        row-gap: 30px;
+        margin-bottom: 50px;
+    }
+    .grid__cards{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .gallery__grid{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'andrew alvan' 
+                             'anoir alvan'
+                             'chewy veronika';
+        grid-template-columns: repeat (2 1fr);
+        grid-template-rows: auto;
+        background-color: rgb(119, 119, 119);
+        gap: 5px;
+        padding: 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        header {
+            background-color: blue;
+            height: auto;
+        }
+        .header__nav{
+            height: auto;
+            justify-content: center;
+        }
+        .header__list{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photos__grid{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat (1 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 'card1'
+                                 'card2'
+                                 'card3'
+                                 'card4'
+                                 'card5'
+                                 'button';
+            column-gap: 25px;
+            row-gap: 30px;
+            margin-bottom: 50px;
+        }
+        .grid__cards{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery__grid{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'andrew'
+                                 'alvan' 
+                                 'anoir'
+                                 'chewy'
+                                 'veronika';
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            background-color: rgb (119, 119, 119);
+            gap: 5px;
+            padding: 5px;
+        }
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
